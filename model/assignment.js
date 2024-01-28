@@ -6,7 +6,13 @@ let AssignmentSchema = Schema({
     id: Number,
     dateDeRendu: Date,
     nom: String,
-    rendu: Boolean
+    rendu: Boolean,
+    auteur: String,
+    matiere: String,
+    note: Number,
+    remarques: String,
+    image: String
+    
 });
 AssignmentSchema.plugin(aggregatePaginate);
 
